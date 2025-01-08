@@ -54,7 +54,9 @@ public class SecurityConfig {
 //
 //                        // All other endpoints just need authentication without specific role
 //                        .anyRequest().authenticated()
-                                .anyRequest().permitAll()
+
+                                .requestMatchers("/api/auth/**").permitAll()  // Allow authentication endpoints
+                                .anyRequest().authenticated()
                 )
                 .sessionManagement(sess -> sess
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
