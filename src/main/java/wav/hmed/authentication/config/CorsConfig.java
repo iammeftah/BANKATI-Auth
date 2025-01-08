@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://bankatif-oq7sao79g-meftahahmedreda89-gmailcoms-projects.vercel.app/","https://bankati-auth.onrender.com")
+                        .allowedOrigins("https://bankatif-7311eogg0-meftahahmedreda89-gmailcoms-projects.vercel.app/","https://bankati-auth.onrender.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .exposedHeaders("Authorization") // Add this line
